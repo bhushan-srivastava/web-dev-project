@@ -643,8 +643,46 @@ header h1> a> svg:hover {
   
 }
 .sideNavigation{
+   border-radius: 0;
+max-width: 100%;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: auto;
+ display: auto;
+ 
+ 
+}
+
+/* Icons by Font Awesome */
+.sideNavigation a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+
+ font-size: large;
+  color: white;
+  display: inline;
+}
+
+/* hover effect */
+.sideNavigation a:hover {
+  color: rgb(38, 38, 38);
+  background-color: rgb(245, 74, 67);
+}
+
+
+
+
+/* icon bar */
+.iconBar {
   display: none;
 }
+
 /* draft form resume */
 #draftFromResume{ font-size: 1.5em;
   margin: auto;
@@ -1065,8 +1103,46 @@ header h1> a> svg:hover {
   
 }
 .sideNavigation{
+   border-radius: 0;
+max-width: 100%;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: auto;
+ display: auto;
+ 
+ 
+}
+
+/* Icons by Font Awesome */
+.sideNavigation a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+
+ font-size: large;
+  color: white;
+  display: inline;
+}
+
+/* hover effect */
+.sideNavigation a:hover {
+  color: rgb(38, 38, 38);
+  background-color: rgb(245, 74, 67);
+}
+
+
+
+
+/* icon bar */
+.iconBar {
   display: none;
 }
+
 /* draft form resume */
 #draftFromResume{ font-size: 1.5em;
   margin: auto;
