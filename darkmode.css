@@ -3,7 +3,7 @@ scroll-behavior: smooth; /*smooth scrolling */
 background-color: rgb(38, 38, 38);
 /* font by Google Font */
 font-family: 'Comfortaa', cursive;
-
+word-wrap: break-word;
 }
 body{
   margin: 0;
@@ -143,6 +143,9 @@ header{
 header h1{
     color: rgb(245, 74, 67);
     font-size: 30px;
+}
+header .smallScreenHi{
+  display: none;
 }
 header p{
   
@@ -560,10 +563,11 @@ footer div> a{
   display: block;
   margin: 25% auto 25% auto;
   text-align: center;
+  height: auto;
 }
 /* left side title */
 .alignLeft{
-  display: flex;
+  display: none;
   text-align: center;
   font-size: 10vw;
   height: auto;
@@ -588,10 +592,13 @@ header h1{
     color: rgb(245, 74, 67);
     font-size: 30px;
 }
+header .smallScreenHi{
+  display: inline;
+}
 header p{
   
   color: white;
-  
+  text-align: left;
   
 }
 /* Icons by Font Awesome */
@@ -601,7 +608,7 @@ header h1> a{
   padding: 20px; 
   border-radius: 50px;
   background-color: #111;
-  
+  display: inline-block;
 }
 /* hover effect */
 header h1> a:hover{
@@ -968,7 +975,9 @@ footer div> a{
 }
 /* small-size screen */
 @media screen and (max-height: 446px) {
-.main{
+ 
+  
+  .main{
     display: block;
   }
   .hero{
@@ -976,10 +985,11 @@ footer div> a{
   display: block;
   margin: 25% auto 25% auto;
   text-align: center;
+  height: auto;
 }
 /* left side title */
 .alignLeft{
-  display: flex;
+  display: none;
   text-align: center;
   font-size: 10vw;
   height: auto;
@@ -1004,10 +1014,13 @@ header h1{
     color: rgb(245, 74, 67);
     font-size: 30px;
 }
+header .smallScreenHi{
+  display: inline;
+}
 header p{
   
   color: white;
-  
+  text-align: left;
   
 }
 /* Icons by Font Awesome */
@@ -1017,7 +1030,7 @@ header h1> a{
   padding: 20px; 
   border-radius: 50px;
   background-color: #111;
-  
+  display: inline-block;
 }
 /* hover effect */
 header h1> a:hover{
@@ -1170,7 +1183,6 @@ header h1> a> svg:hover {
     border: medium solid #111;
     border-width: 10px 10px 10px 0;
     border-color: transparent #111 transparent transparent;
-    color: white;
   }
   .left::after, .right::after {
     left: 15px;
@@ -1178,6 +1190,7 @@ header h1> a> svg:hover {
   .right {
     left: 0%;
   }
+  /*about heading*/
 #aboutHeading{ font-size: 1.5em;
   margin: auto;
   display: flex;
