@@ -671,7 +671,8 @@ max-width: 100%;
 
  font-size: large;
   color: white;
-  display: inline;
+  display: inline-block;
+  border-radius: 50px;
 }
 
 /* hover effect */
@@ -1136,7 +1137,8 @@ max-width: 100%;
 
  font-size: large;
   color: white;
-  display: inline;
+  display: inline-block;
+  border-radius: 50px;
 }
 
 /* hover effect */
