@@ -615,11 +615,16 @@ header h1> a:hover{
   
   color: rgb(38, 38, 38);
   background-color: rgb(245, 74, 67);
-
+  
+}
+.lightModeSVG, .darkModeSVG{
+  padding: 10px 15px 20px 15px;
+  display: inline-block;
+  
 }
 /* dark mode, light mode icons by Google Icons */
 header h1> a> svg {
- 
+  
   text-align: center;
 
   
@@ -647,6 +652,8 @@ max-width: 100%;
   padding-bottom: 20px;
   margin-top: auto;
  display: auto;
+ 
+
  
  
 }
@@ -1075,11 +1082,16 @@ header h1> a:hover{
   
   color: rgb(38, 38, 38);
   background-color: rgb(245, 74, 67);
-
+  
+}
+.lightModeSVG, .darkModeSVG{
+  padding: 10px 15px 20px 15px;
+  display: inline-block;
+  
 }
 /* dark mode, light mode icons by Google Icons */
 header h1> a> svg {
- 
+  
   text-align: center;
 
   
