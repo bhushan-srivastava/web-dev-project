@@ -599,7 +599,7 @@ header p{
   
   color: white;
   text-align: left;
-  
+  max-width: 90%; margin: auto;
 }
 /* Icons by Font Awesome */
 header h1> a{
@@ -864,6 +864,10 @@ max-width: 100%;
     align-items: center;
     color: white;
 }
+div #sem2, #sem1, #ISC, #project{
+  max-width: 90%;
+  margin: auto;
+}
 .aboutPages div> p{
     width: 80px;
    
@@ -999,7 +1003,8 @@ footer h1{
 footer p{
   
   color: white;
-
+  max-width: 90%;
+  margin: auto;
 }
 /* Icons by Font Awesome */
 footer h1> a{
@@ -1017,6 +1022,8 @@ footer h1> a:hover{
 }
 footer div> a{
   color: white;
+  max-width: 90%;
+  margin: auto;
 }
 }
 /* small-size screen */
@@ -1067,7 +1074,7 @@ header p{
   
   color: white;
   text-align: left;
-  
+  max-width: 90%; margin: auto;
 }
 /* Icons by Font Awesome */
 header h1> a{
@@ -1120,6 +1127,8 @@ max-width: 100%;
   padding-bottom: 20px;
   margin-top: auto;
  display: auto;
+ 
+
  
  
 }
@@ -1330,6 +1339,10 @@ max-width: 100%;
     align-items: center;
     color: white;
 }
+div #sem2, #sem1, #ISC, #project{
+  max-width: 90%;
+  margin: auto;
+}
 .aboutPages div> p{
     width: 80px;
    
@@ -1465,7 +1478,8 @@ footer h1{
 footer p{
   
   color: white;
-
+  max-width: 90%;
+  margin: auto;
 }
 /* Icons by Font Awesome */
 footer h1> a{
@@ -1483,6 +1497,8 @@ footer h1> a:hover{
 }
 footer div> a{
   color: white;
+  max-width: 90%;
+  margin: auto;
 }
 }
 

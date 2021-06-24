@@ -35,27 +35,7 @@ function myFunction() {
 
 
 
-/*window.onresize = function () { checkResize() };
-function checkResize() {
-    var WIDTH_LIMIT = 1009;
-    var HEIGHT_LIMIT = 446;
-    var windowWidth = window.innerWidth;
-    var windowHeight = window.innerHeight;
-    const controller = new ScrollMagic.Controller();
-    if (windowWidth >= WIDTH_LIMIT && windowHeight >= HEIGHT_LIMIT) {
 
-
-        new ScrollMagic.Scene({
-            duration: "200%",
-            triggerElement: ".aboutTitle",
-            triggerHook: 0
-        })
-            .setPin(".aboutTitle")
-            //.addIndicators()
-            .addTo(controller);
-    }
-
-}*/
 
 
 window.addEventListener('scroll', reveal);
