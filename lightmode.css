@@ -1540,3 +1540,6 @@ footer div> a{
   transform: translateX(0);
   -webkit-transform: translateX(0);
 }
+a:hover{
+  color:rgb(245, 74, 67);
+}
