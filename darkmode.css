@@ -42,7 +42,7 @@ body {
  position: absolute;
   display: flex;
   z-index: 99;
-  bottom: 1%;
+  bottom: 2%;
   left: 50%;
   transform: translate(-60%,0);
 }
@@ -171,6 +171,9 @@ section {
 .topNavigation button{
   margin: 2%;
 }
+.buttons{
+  bottom: 10%;
+  }
 }
 /* small-size screen */
 @media screen and (max-height: 446px) {
@@ -200,4 +203,7 @@ section {
 .topNavigation button{
   margin: 2%;
 }
+.buttons{
+  bottom: 10%;
+  }
 }
