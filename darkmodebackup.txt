@@ -31,12 +31,11 @@ body {
   margin-left: 2%;
   padding: 10px;
   font-family: 'Comfortaa', cursive;
-  border: solid  2px #b4b1b1;
+  border: solid #373024;
 }
 .topNavigation button:hover {
   background-color: #373024;
 color: #EFE1CE;
-border: solid 2px #373024;
 }
 .buttons{
  position: absolute;
@@ -55,7 +54,7 @@ border: solid 2px #373024;
   cursor: pointer;
   border-radius: 50px;
   text-decoration: none;
-  border: solid  2px #b4b1b1;
+  border: solid #373024;
   margin-left: 5%;
   padding: 10px;
   font-size: xx-large;
@@ -65,7 +64,6 @@ border: solid 2px #373024;
 #homeButton:hover, #leftButton:hover, #rightButton:hover {
   background-color: #373024;
 color: #EFE1CE;
-border: solid 2px #373024;
 }
 
 .main {
@@ -79,27 +77,26 @@ h1 {
   padding: 0;
 }
 section {
-  min-width: 100vw;
+  min-width: 50vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   font-size: large;
-
 }
-section h1, section p, section ul, section a, section button, section img{
+section h1, p, ul{
   margin-left: 5%;
   margin-right: 5%;
 }
 section:nth-child(even) {
-
+  /* background-color: teal; */
   background-color: #EFE1CE;
   
 }
 section:nth-child(odd) {
   background-color: rgb(246, 241, 238);
-
+  /* color: white; */
   
 }
 a{
@@ -116,53 +113,42 @@ font-size: 1000%;
 font-size: 1000%;
 }
 #quizlyPicture{
-  max-inline-size: 25%;
+  max-inline-size: 50%;
   border-radius: 50px;
 
 }
-#pleaseScroll{
-  display: none;
-}
-#hero{
-
- align-items: center;
-}
-.resources a{
-margin-left: 0;
-margin-right: 0;
-}
 /* Icons by Font Awesome */
 .social a{
-
+  /* color: #373024; */
   padding: 10px; 
   border-radius: 50px;
   background-color: #EFE1CE;
   font-size: xx-large;
   margin: 5px;
-  border: solid  2px #b4b1b1;
+  border: solid #373024;
 }
 /* hover effect */
 .social a:hover{
   background-color: #373024;
 color: #EFE1CE;
-border: solid 2px #373024;
-}
-::-webkit-scrollbar {
-  display: none;
 }
 
 
-/* small-size screen */
+
+
 @media screen and (max-width: 1009px)  { 
- 
+  #rightArrowEmojiSection{
+    display: none;
+  }
 ::-webkit-scrollbar {
   display: none;
+}
+section {
+  min-width: 100vw;
+  
 }
 #home{
   display: none;
-}
-#pleaseScroll{
-  display: inherit;
 }
 .topNavigation{
   position: fixed;
@@ -175,20 +161,22 @@ border: solid 2px #373024;
   margin: 2%;
 }
 }
-/* small-size screen */
 @media screen and (max-height: 446px) {
-  
+  #rightArrowEmojiSection{
+    display: none;
+  }
 ::-webkit-scrollbar {
   display: none;
+}
+section {
+  min-width: 100vw;
+  
 }
 #home{
   display: none;
 }
-#pleaseScroll{
-  display: inherit;
-}
 .topNavigation{
-  position: fixed;
+  position: sticky;
   display: flex;
   flex-wrap: wrap;
   width: 80vw;

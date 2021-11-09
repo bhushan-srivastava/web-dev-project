@@ -1,71 +1,90 @@
+/*const scrollContainer = document.getElementsByClassName('main')[0];
+
+scrollContainer.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollContainer.scrollLeft = scrollContainer.scrollLeft + 20 * evt.deltaY;
+});*/
+
 var setTheme = localStorage.getItem('theme');
 if (setTheme == null) {
-    change('darkmode.css');
+    document.getElementById("myStyleSheet").href = 'lightmode.css';
+    localStorage.setItem('theme', 'lightmode.css');
 }
-else {
-    change(setTheme);
-}
-function change(name) {
-
-    document.getElementById("myStyleSheet").href = name;
-    localStorage.setItem('theme', name);
-}
-
-
-
-
-function topFunction() {
-
-
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
-window.onscroll = function () { myFunction() };
-
-function myFunction() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("myBar").style.width = scrolled + "%";
-}
-
-
-
-
-
-
-
-
-
-window.addEventListener('scroll', reveal);
-function reveal() {
-    //for left to right slide
-    var reveals = document.getElementsByClassName('reveal');
-    for (var i = 0; i < reveals.length; i++) {
-        var windowheight = window.innerHeight;
-        var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 150;
-        if (revealtop < windowheight - revealpoint) {
-            reveals[i].classList.add('active');
-        }
-        else {
-            reveals[i].classList.remove('active');
-        }
-
+function change() {
+    var setTheme = localStorage.getItem('theme');
+    if (setTheme == 'darkmode.css') {
+        document.getElementById("myStyleSheet").href = 'lightmode.css';
+        localStorage.setItem('theme', 'lightmode.css');
     }
-    //for right to left slide
-    var reveals1 = document.getElementsByClassName('revealRight');
-    for (var i = 0; i < reveals1.length; i++) {
-        var windowheight = window.innerHeight;
-        var revealtop = reveals1[i].getBoundingClientRect().top;
-        var revealpoint = 150;
-        if (revealtop < windowheight - revealpoint) {
-            reveals1[i].classList.add('active');
-        }
-        else {
-            reveals1[i].classList.remove('active');
-        }
-
+    else if (setTheme == 'lightmode.css') {
+        document.getElementById("myStyleSheet").href = 'darkmode.css';
+        localStorage.setItem('theme', 'darkmode.css');
     }
 }
+
+
+
+
+const scrollContainer = document.getElementsByClassName('main')[0];
+
+window.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    if (evt.deltaY > 0) {
+        slideRight();
+    }
+    else if (evt.deltaY < 0) {
+        slideLeft();
+    }
+});
+
+window.addEventListener("keydown", (e) => {
+    e.preventDefault();
+    var x = e.key;
+    if (x == "ArrowDown" || x == "ArrowRight" || x == "PageDown" || x == " ") {
+        slideRight();
+    }
+    else if (x == "ArrowUp" || x == "ArrowLeft" || x == "PageUp") {
+        slideLeft();
+    }
+    else if (x == "Home") {
+        homeFunction();
+    }
+    else if (x == "End") {
+        endFunction();
+    }
+});
+
+function homeFunction() {
+    scrollContainer.scrollBy({
+        top: 0,
+        left: -50000/*,
+        behavior: 'smooth'*/
+    })
+}
+function slideRight() {
+    scrollContainer.scrollBy({
+        top: 0,
+        left: window.innerWidth * 1/*,
+        behavior: 'smooth'*/
+    })
+}
+function slideLeft() {
+    scrollContainer.scrollBy({
+        top: 0,
+        left: window.innerWidth * (-1)/*,
+        behavior: 'smooth'*/
+    })
+
+}
+function endFunction() {
+    scrollContainer.scrollBy({
+        top: 0,
+        left: 50000/*,
+        behavior: 'smooth'*/
+    })
+
+}
+
+
+
+
