@@ -172,6 +172,9 @@ border: solid 2px #373024;
   .buttons{
     bottom: 10%;
 }
+#resources{
+    display: none;
+  }
 }
 /* small-size screen */
 @media screen and (max-height: 446px) {
@@ -203,5 +206,8 @@ border: solid 2px #373024;
   }
   .buttons{
   bottom: 10%;
+  }
+  #resources{
+    display: none;
   }
 }
