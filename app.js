@@ -1,5 +1,4 @@
 /*const scrollContainer = document.getElementsByClassName('main')[0];
-
 scrollContainer.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     scrollContainer.scrollLeft = scrollContainer.scrollLeft + 20 * evt.deltaY;
@@ -51,6 +50,17 @@ window.addEventListener("keydown", (e) => {
     }
     else if (x == "End") {
         endFunction();
+    }
+});
+
+window.addEventListener('touchstart', (event1) => {
+    event1.preventDefault();
+    var touchobj = event1.changedTouches[0]
+    if (touchobj.pageX > (window.innerWidth * (3 / 4))) {
+        slideRight();
+    }
+    else if (touchobj.pageX < (window.innerWidth * (1 / 4))) {
+        slideLeft();
     }
 });
 
