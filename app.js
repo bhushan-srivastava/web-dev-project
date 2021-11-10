@@ -3,7 +3,6 @@ scrollContainer.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     scrollContainer.scrollLeft = scrollContainer.scrollLeft + 20 * evt.deltaY;
 });*/
-
 var setTheme = localStorage.getItem('theme');
 if (setTheme == null) {
     document.getElementById("myStyleSheet").href = 'lightmode.css';
