@@ -183,6 +183,9 @@ section {
   bottom: 10%;
   }
   #resources{
+display: none;
+  }
+  #cursors {
     display: none;
   }
 }
@@ -218,6 +221,9 @@ section {
   bottom: 10%;
   }
   #resources{
+display: none;
+  }
+  #cursors {
     display: none;
   }
 }

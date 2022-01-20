@@ -115,8 +115,8 @@ document.addEventListener("mousemove", function (event) {
 function mouseOverFunction() {
     if (window.innerHeight > 446 && window.innerWidth > 1009) {
         document.getElementById('cursors').style.display = 'inherit';
-        document.getElementById('cursors').style.width = 32;
-        document.getElementById('cursors').style.height = 32;
+        document.getElementById('cursors').style.width = '32px';
+        document.getElementById('cursors').style.height = '32px';
         document.getElementById('cursors').style.border = 'solid 2px white';
         document.getElementById('cursors').style.backgroundColor = 'rgba(255, 255, 255, 0)';
     }
@@ -127,8 +127,8 @@ function mouseOverFunction() {
 function mouseOutFunction() {
     if (window.innerHeight > 446 && window.innerWidth > 1009) {
         document.getElementById('cursors').style.display = 'inherit';
-        document.getElementById('cursors').style.width = 10;
-        document.getElementById('cursors').style.height = 10;
+        document.getElementById('cursors').style.width = '10px';
+        document.getElementById('cursors').style.height = '10px';
         document.getElementById('cursors').style.border = 'none';
         document.getElementById('cursors').style.backgroundColor = '#111';
     }
@@ -136,3 +136,4 @@ function mouseOutFunction() {
         document.getElementById('cursors').style.display = 'none';
     }
 }
+document.onload = function () { document.getElementById('cursors').style.display = 'none'; };

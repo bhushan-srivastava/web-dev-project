@@ -48,3 +48,15 @@ a:hover{
   pointer-events: none;
   transform: translate(-50%, -50%);
 }
+/* small-size screen */
+@media screen and (max-width: 1009px)  { 
+#cursors {
+    display: none;
+  }
+}
+/* small-size screen */
+@media screen and (max-height: 446px) {
+  #cursors {
+    display: none;
+  }
+}
