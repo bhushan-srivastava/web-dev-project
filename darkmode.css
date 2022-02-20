@@ -121,6 +121,9 @@ font-size: 1000%;
 #pleaseScroll{
   display: none;
 }
+#rightArrowEmojiSection{
+  display: none;
+}
 /* Icons by Font Awesome */
 .social a{
 

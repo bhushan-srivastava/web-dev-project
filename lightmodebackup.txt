@@ -114,12 +114,15 @@ font-size: 1000%;
 #rightArrowEmoji{
 font-size: 1000%;
 }
-#quizlyPicture, #allInOneUnitConverterPicture{
+#quizlyPicture, #allInOneUnitConverterPicture, #rockPaperScissorsPicture{
   max-inline-size: 50%;
   border-radius: 50px;
 
 }
 #pleaseScroll{
+  display: none;
+}
+#rightArrowEmojiSection{
   display: none;
 }
 /* Icons by Font Awesome */
